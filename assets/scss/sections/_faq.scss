@@ -1,0 +1,72 @@
+/* ==== 
+ --------- (5.8) faq section styles start ---------
+ ==== */
+
+.faq {
+  .faq__content {
+    h6 {
+      margin-top: 0px;
+      button {
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+
+    .accordion-item {
+      background: #394189;
+      border: 0px;
+      border-color: $primary-color;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      &:nth-last-of-type(1) {
+        margin-bottom: 0px;
+      }
+    }
+
+    .accordion-button {
+      box-shadow: none;
+      padding: 20px 30px;
+      background: #394189;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      font-weight: 600;
+      color: $white;
+      gap: 30px;
+      &::after {
+        background-image: none;
+        content: "\2b";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        width: 50px;
+        height: 50px;
+        background: $white;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: $black;
+      }
+    }
+
+    .accordion-button:not(.collapsed) {
+      &::after {
+        content: "\f068";
+        background-color: $primary-color;
+        background-image: linear-gradient(180deg, #f9643d 0%, #fe2a77 100%);
+        color: $white;
+      }
+    }
+
+    .accordion-body {
+      background: #6167a0;
+      padding: 30px 30px;
+      border-radius: 0px 0px 10px 10px;
+      border-top: 1px solid #5379df57;
+    }
+  }
+}
+
+/* ==== 
+ --------- (5.8) faq section styles end ---------
+ ==== */

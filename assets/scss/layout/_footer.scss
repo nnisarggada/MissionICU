@@ -1,0 +1,195 @@
+/* ==== 
+ --------- (4.3) footer styles start ---------
+ ==== */
+
+.footer {
+  padding-top: 275px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 40%;
+    background: #18214c;
+    border-radius: 700% 700% 0px 0px;
+    transform: scaleX(1.2);
+    z-index: -1;
+  }
+
+  .footer__form {
+    padding: 60px 40px;
+    background: #394189;
+    border-radius: 30px;
+    margin-bottom: 120px;
+  }
+
+  .footer__form-content {
+    h5,
+    h3 {
+      margin-bottom: 25px;
+    }
+
+    .footer__form-content-social {
+      display: flex;
+      align-items: center;
+      column-gap: 120px;
+      row-gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      p {
+        margin-bottom: 8px;
+        color: #f2f2f2;
+      }
+
+      a {
+        color: #f2f2f2;
+        &:hover {
+          color: #fb1ac0;
+        }
+      }
+    }
+
+    .footer__form-phone {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -60px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 60px;
+        background-color: #cecece;
+      }
+
+      &:nth-last-of-type(1) {
+        &::before {
+          content: none;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      row-gap: 15px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .footer__ticket {
+    margin-top: 40px;
+    hr {
+      margin: 35px 0px 45px;
+      border-bottom: 1px solid #b8b7bc;
+    }
+  }
+
+  .footer__ticket__tabs {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ffffff;
+    a {
+      font-weight: 500;
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .ticket__btn--active {
+      border-bottom: 2px solid #f6ad03;
+    }
+  }
+
+  .ticket__tabs {
+    margin-top: 40px;
+    h6 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      &:nth-last-of-type(1) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .footer__form-contact {
+    padding: 40px 30px;
+    border: 1px solid #74779f;
+    border-radius: 30px;
+    h5 {
+      margin-bottom: 40px;
+    }
+
+    .cmn-button {
+      margin-top: 40px;
+      color: $white;
+    }
+  }
+
+  .footer__nav {
+    padding-bottom: 25px;
+  }
+
+  .footer__links {
+    ul {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      row-gap: 15px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      li {
+        margin-top: 0px;
+      }
+      a {
+        &:hover {
+          color: #fb1ac0;
+        }
+      }
+    }
+  }
+
+  .footer__copy {
+    border-top: 1px solid #4b508a;
+    padding: 30px 0px;
+
+    p {
+      margin-top: 0px;
+      a {
+        &:hover {
+          color: #fb1ac0;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      a {
+        &:hover {
+          color: #fb1ac0;
+        }
+      }
+    }
+  }
+}
+
+/* ==== 
+ --------- (4.3) footer styles end ---------
+ ==== */

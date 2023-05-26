@@ -1,0 +1,76 @@
+/* ==============
+ ========= css documentation =========
+
+ * theme name: Evlio
+ * version: 1.0
+ * description: Business Conference Html5 Template
+ * author: uiaxis
+ * author url: https://themeforest.net/user/uiaxis
+
+ 01. abstracts
+     1.1 --> mixins
+     1.2 --> variables
+    
+ 02. base
+     2.1 --> reset
+     2.2 --> typography
+     2.3 --> global
+
+ 03. components
+     3.1 --> buttons
+     3.2 --> forms
+     3.3 --> preloader
+
+ 04. layout
+     4.1 --> header
+     4.2 --> banner
+     4.3 --> footer
+
+ 05. sections
+     5.1 --> sponsor
+     5.2 --> solving
+     5.3 --> speaker
+     5.4 --> event
+     5.5 --> counter
+     5.6 --> conference
+     5.7 --> pricing
+     5.8 --> faq
+
+ 06. responsive
+ 
+=================================
+============== */
+
+// abstract styles
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base styles
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/global";
+
+// component styles
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/preloader";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/footer";
+
+// section styles
+@import "./sections/sponsor";
+@import "./sections/solving";
+@import "./sections/speaker";
+@import "./sections/event";
+@import "./sections/counter";
+@import "./sections/conference";
+@import "./sections/pricing";
+@import "./sections/faq";
+@import "./sections/ticket-modal";
+@import "./sections/conference-modal";
+
+// responsive styles
+@import "./responsive";

@@ -1,0 +1,27 @@
+/* ==== 
+ --------- (5.1) sponsor section styles start ---------
+ ==== */
+
+.sponsor {
+  .sponsor__content {
+    padding: 60px 80px;
+    background-color: $primary-color;
+    box-shadow: $shadow;
+    border-radius: 20px;
+    margin-top: -120px;
+  }
+
+  .sponsor__slider {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .sponsor__slider-single {
+    text-align: center;
+  }
+}
+
+/* ==== 
+ --------- (5.1) sponsor section styles end ---------
+ ==== */

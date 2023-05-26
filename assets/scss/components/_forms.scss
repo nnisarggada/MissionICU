@@ -1,0 +1,36 @@
+/* ==== 
+ --------- (3.2) forms styles start ---------
+ ==== */
+
+.input-single {
+  margin-bottom: 30px;
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 0px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #74779f;
+    border-radius: 10px;
+    &::placeholder {
+      color: #ffffff50;
+    }
+  }
+
+  textarea {
+    max-height: 160px;
+  }
+}
+
+/* ==== 
+ --------- (3.2) forms styles end ---------
+ ==== */

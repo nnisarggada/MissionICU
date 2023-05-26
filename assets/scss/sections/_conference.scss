@@ -1,0 +1,49 @@
+/* ==== 
+ --------- (5.6) conference section styles start ---------
+ ==== */
+
+.conference {
+  .conference__single {
+    border-radius: 30px;
+    img {
+      border-radius: 30px;
+      width: 100%;
+      height: auto;
+      min-height: 250px;
+    }
+    .video-modal {
+      @include box(80px);
+      border-radius: 50%;
+      background: radial-gradient(
+        100% 100% at 0% 0%,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02),
+        inset 5px 5px 4px rgba(255, 255, 255, 0.1);
+      filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
+      backdrop-filter: blur(21px);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      i {
+        color: $white;
+      }
+    }
+
+    h4 {
+      color: $white;
+      margin-top: 20px;
+    }
+  }
+}
+
+.conference__single-thummb {
+  position: relative;
+}
+
+/* ==== 
+ --------- (5.6) conference section styles end ---------
+ ==== */

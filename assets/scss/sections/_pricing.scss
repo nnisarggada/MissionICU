@@ -1,0 +1,90 @@
+/* ==== 
+  --------- (5.7) pricing section styles start ---------
+  ==== */
+
+.pricing {
+  background-image: url("../images/ticket-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  .section__header {
+    p {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      strong {
+        color: #eb5757;
+        background: #eb575720;
+        border-radius: 10px;
+        padding: 0px 10px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .pricing__single {
+    padding: 40px 30px;
+    background: #394189;
+    border: 1px solid #464e9350;
+    border-radius: 10px;
+  }
+
+  .pricing__single-header {
+    img {
+      margin-bottom: 30px;
+    }
+
+    h5 {
+      color: $white;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+  }
+
+  hr {
+    margin: 30px 0px;
+    opacity: 1;
+    border-color: #bababa70;
+  }
+
+  .pricing__single-features {
+    h5 {
+      margin-bottom: 30px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 30px;
+      color: #f2f2f2;
+      &:nth-last-of-type(1) {
+        margin-bottom: 0px;
+      }
+
+      i {
+        @include box(30px);
+        background-color: #323cb5;
+        color: $white;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .pricing__single-cta {
+    margin-top: 40px;
+    .cmn-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .great-deal {
+    border: 2px solid #fe2a77;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* ==== 
+      --------- (5.7) pricing section styles end ---------
+    ==== */

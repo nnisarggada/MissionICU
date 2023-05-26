@@ -1,0 +1,28 @@
+// (1.2) variables
+
+// jost google font source
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap");
+
+// font family
+$jost: "Jost", sans-serif;
+
+// theme default
+$theme-font: $jost;
+$theme-bg: #292d52;
+$theme-color: #ffffff;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$primary-color: #2c3269;
+$secondary-color: #373d80;
+$tertiary-color: #2c305e;
+$quaternary-color: #394189;
+
+// transitions
+$transition: all 0.3s ease-out;
+
+// box shadow
+$shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+$secondary-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02),
+  inset 5px 5px 4px rgba(255, 255, 255, 0.1);
