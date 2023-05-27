@@ -2,11 +2,14 @@
 var element = document.getElementById("map");
 
 // Create Leaflet map on map element.
-var map = L.map(element);
+var map = L.map(element, {
+  minZoom: 4,
+});
 
 // Add OSM tile layer to the Leaflet map.
 L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
   attribution: "",
+  maxZoom: 18,
 }).addTo(map);
 
 // Target's GPS coordinates.
