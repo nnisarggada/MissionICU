@@ -9,11 +9,19 @@ var map = L.map(element, {
 // Add OSM tile layer to the Leaflet map.
 L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
   attribution: "",
-  maxZoom: 18,
+  // maxZoom: 18,
+  // snapToZoom: true,
 }).addTo(map);
 
+map.setMaxBounds(
+  L.latLngBounds(
+    L.latLng(4.291356380775656, 65.25237926731651),
+    L.latLng(33.97698963864011, 101.07991660528292)
+  )
+);
+
 // Target's GPS coordinates.
-var target = [22.250161205265993, 82.17588356892945];
+var target = [22.096661863216614, 82.1395035548375];
 
 // Set map's center to target with zoom 4.
 map.setView(target, 4);
