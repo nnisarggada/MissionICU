@@ -1057,7 +1057,7 @@ i {
 }
 
 .header-active {
-  background-color: #2e3261;
+  background-color: #2a3693;
   -webkit-animation: header 0.5s linear;
   animation: header 0.5s linear;
   top: 0px;

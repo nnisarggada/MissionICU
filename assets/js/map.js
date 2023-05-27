@@ -69,6 +69,16 @@ addMarker("District Hospital Reasi", 33.09750789846318, 74.84543400343395);
 for (let i = 0; i < locations.length; i++) {
   var marker = L.marker(L.latLng(locations[i]["lat"], locations[i]["lng"]), {
     title: locations[i]["name"],
+    icon: L.icon({
+      iconUrl: "assets/images/map-pin-with-logo-white.png",
+      iconSize: [40, 40],
+      // iconAnchor: [20, 40],
+      // popupAnchor: [0, -40],
+      // tooltipAnchor: [20, -40],
+      // shadowSize: [20, 20],
+      // shadowAnchor: [20, 20],
+      // shadowUrl: "assets/img/map-marker-shadow.png",
+    }),
   })
     .bindPopup("<b>" + locations[i]["name"] + "</b>")
     .openPopup();

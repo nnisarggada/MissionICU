@@ -832,7 +832,7 @@ i {
   right: 0px;
   width: 100%;
   z-index: 9;
-  background: rgba(46, 50, 97, 0.4);
+  background: rgba(42, 54, 147, 0.4);
   border-bottom: 1px solid #4b508a;
 }
 
@@ -997,7 +997,7 @@ i {
 }
 
 .header-active {
-  background-color: #2e3261;
+  background-color: #2a3693;
   animation: header 0.5s linear;
   top: 0px;
   z-index: 99999;
@@ -3130,5 +3130,4 @@ i {
 .map-data {
   height: 100%;
   width: 40%;
-  /* background-color: red; */
 }
