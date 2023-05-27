@@ -15,24 +15,10 @@ var target = [22.250161205265993, 82.17588356892945];
 // Set map's center to target with zoom 4.
 map.setView(target, 4);
 
-let locations = [
-  {
-    name: "District Hospital Tumkur",
-    lat: 13.349446268392844,
-    lng: 77.09855528966014,
-  },
-  {
-    name: "Aralaguppe Mallegowda District Hospital",
-    lat: 13.314408415303127,
-    lng: 75.77464563966373,
-  },
-];
+let locations = [];
 
-
-
-function addMarker(name, lat, lng)
-{
-  locations.push({"name": name, "lat": lat, "lng": lng});
+function addMarker(name, lat, lng) {
+  locations.push({ name: name, lat: lat, lng: lng });
 }
 
 addMarker("District Hospital Tumkur", 13.349446268392844, 77.09855528966014);
@@ -81,5 +67,12 @@ addMarker("Dhalai District Hospital", 23.954947489992822, 91.82524217117655);
 addMarker("District Hospital Reasi", 33.09750789846318, 74.84543400343395);
 
 for (let i = 0; i < locations.length; i++) {
-  L.marker([locations[i]["lat"], locations[i]["lng"]]).addTo(map);
+  var marker = L.marker(L.latLng(locations[i]["lat"], locations[i]["lng"]), {
+    title: locations[i]["name"],
+  })
+    .bindPopup("<b>" + locations[i]["name"] + "</b>")
+    .openPopup();
+
+  marker.properties = locations[i];
+  marker.addTo(map);
 }

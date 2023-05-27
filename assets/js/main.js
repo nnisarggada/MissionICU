@@ -187,7 +187,6 @@
       return false;
     });
 
-
     // theme switcher
 
     var checkBox = document.getElementById("chk");
@@ -200,28 +199,36 @@
       if (this.checked) {
         document.documentElement.setAttribute("data-theme", "light");
         window.localStorage.setItem("data-theme", "light");
-        $('link[href="assets/css/main.css"]').attr("href", "assets/css/light.css");
-        $('#lightLogo').attr("src", "assets/images/logo-dark.png");
+        $('link[href="assets/css/main.css"]').attr(
+          "href",
+          "assets/css/light.css"
+        );
+        $("#lightLogo").attr("src", "assets/images/logo-dark.png");
       } else {
         document.documentElement.setAttribute("data-theme", "dark");
         window.localStorage.setItem("data-theme", "dark");
-        $('link[href="assets/css/light.css"]').attr("href", "assets/css/main.css");
-        $('#lightLogo').attr("src", "assets/images/logo-light.png");
+        $('link[href="assets/css/light.css"]').attr(
+          "href",
+          "assets/css/main.css"
+        );
+        $("#lightLogo").attr("src", "assets/images/logo-light.png");
       }
     });
 
     if (localStorage.getItem("data-theme") == "light") {
-      $('link[href="assets/css/main.css"]').attr("href", "assets/css/light.css");
-      $('#lightLogo').attr("src", "assets/images/logo-dark.png");
+      $('link[href="assets/css/main.css"]').attr(
+        "href",
+        "assets/css/light.css"
+      );
+      $("#lightLogo").attr("src", "assets/images/logo-dark.png");
     }
 
     if (localStorage.getItem("data-theme") == "dark") {
-      $('link[href="assets/css/light.css"]').attr("href", "assets/css/main.css");
-      $('#lightLogo').attr("src", "assets/images/logo-light.png");
+      $('link[href="assets/css/light.css"]').attr(
+        "href",
+        "assets/css/main.css"
+      );
+      $("#lightLogo").attr("src", "assets/images/logo-light.png");
     }
-
   });
 })(jQuery);
-
-
-
