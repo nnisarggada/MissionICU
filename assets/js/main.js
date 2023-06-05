@@ -203,7 +203,7 @@
           "href",
           "assets/css/light.css"
         );
-        $("#lightLogo").attr("src", "assets/images/logo-dark.png");
+        $("#lightLogo").attr("src", "assets/images/logo-light.png");
       } else {
         document.documentElement.setAttribute("data-theme", "dark");
         window.localStorage.setItem("data-theme", "dark");
@@ -211,7 +211,7 @@
           "href",
           "assets/css/main.css"
         );
-        $("#lightLogo").attr("src", "assets/images/logo-light.png");
+        $("#lightLogo").attr("src", "assets/images/logo.png");
       }
     });
 
@@ -220,7 +220,7 @@
         "href",
         "assets/css/light.css"
       );
-      $("#lightLogo").attr("src", "assets/images/logo-dark.png");
+      $("#lightLogo").attr("src", "assets/images/logo-light.png");
     }
 
     if (localStorage.getItem("data-theme") == "dark") {
@@ -228,7 +228,7 @@
         "href",
         "assets/css/main.css"
       );
-      $("#lightLogo").attr("src", "assets/images/logo-light.png");
+      $("#lightLogo").attr("src", "assets/images/logo.png");
     }
   });
 })(jQuery);

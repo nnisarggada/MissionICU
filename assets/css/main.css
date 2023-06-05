@@ -534,18 +534,18 @@ i {
   display: block;
   border-radius: 50px;
   box-shadow: inset 0 0 0 2px #fe2a7740;
-  z-index: 10000;
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
   transition: all 200ms linear;
-  z-index: 99;
+  z-index: 10000;
 }
 
 .progress-wrap.active-progress {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  z-index: 10000;
 }
 
 .progress-wrap::after {
