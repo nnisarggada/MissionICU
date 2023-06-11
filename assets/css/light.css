@@ -213,6 +213,46 @@ p {
   width: 40%;
 }
 
+.taluka-form {
+  width: min(700px, 90vw);
+  display: flex;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.taluka-list {
+  width: 100%;
+  height: 15%;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.scroll-content {
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.taluka-name {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.taluka-list h3,
+.taluka-name h5 {
+  color: #292d52;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* ==== 
  --------- (2.1) reset styles end ---------
  ==== */
